@@ -7,7 +7,7 @@ A minimal Docker image for [pgcli](https://www.pgcli.com/), a command-line inter
 ## Features
 
 - Based on `python:3.13.5-alpine3.22` for a small footprint
-- Installs `pgcli` **version 4.0.1** and `psycopg[binary]` using [uv](https://github.com/astral-sh/uv) for fast dependency management
+- Installs `pgcli` **version 4.3.0** and `psycopg[binary]` using [uv](https://github.com/astral-sh/uv) for fast dependency management
 - Automated builds and publishing via GitHub Actions
 
 ## Usage
