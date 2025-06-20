@@ -2,7 +2,7 @@
 
 A minimal Docker image for [pgcli](https://www.pgcli.com/), a command-line interface for PostgreSQL with auto-completion and syntax highlighting.
 
-![Build Status](https://github.com/vladtara/docker-pgcli/actions/workflows/docker-publish.yml/badge.svg)
+![Build Status](https://github.com/vladtara/docker-pgcli/actions/workflows/build_and_push.yml/badge.svg)
 
 ## Features
 
@@ -42,7 +42,7 @@ docker build -t docker-pgcli .
 
 ## Continuous Integration
 
-Docker images are automatically built and published for multiple platforms (`linux/amd64`, `linux/arm64`) using [GitHub Actions](.github/workflows/docker-publish.yml) on every push to `main`.
+Docker images are automatically built and published for platforms (`linux/amd64`) using [GitHub Actions](.github/workflows/build_and_push.yml) on every push to `main`.
 
 ## License
 
