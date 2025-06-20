@@ -22,7 +22,7 @@ docker pull ghcr.io/vladtara/docker-pgcli:latest
 
 ```sh
 docker run --rm -it ghcr.io/vladtara/docker-pgcli \
-  -h <host> -U <user> <database>
+  -h <host> -p 5432 -U <user> <database>
 ```
 
 Replace `<host>`, `<user>`, and `<database>` with your PostgreSQL connection details.
@@ -30,8 +30,13 @@ Replace `<host>`, `<user>`, and `<database>` with your PostgreSQL connection det
 ### Example
 
 ```sh
+export HOSTDB="localhost"
+export USERDB="postgres"
+export DATABASE="postgres"
+export PORTDB=5432
+
 docker run --rm -it ghcr.io/vladtara/docker-pgcli \
-  -h localhost -U postgres postgres
+  -h $HOSTDB -p $PORTDB -U $USERDB $DATABASE
 ```
 
 ## Build Locally
