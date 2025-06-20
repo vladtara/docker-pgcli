@@ -7,8 +7,8 @@ A minimal Docker image for [pgcli](https://www.pgcli.com/), a command-line inter
 ## Features
 
 - Based on `python:3.13.5-alpine3.22` for a small footprint
-- Installs `pgcli` and `psycopg[binary]` using [uv](https://github.com/astral-sh/uv) for fast dependency management
-- Multi-architecture builds via GitHub Actions
+- Installs `pgcli` **version 4.0.1** and `psycopg[binary]` using [uv](https://github.com/astral-sh/uv) for fast dependency management
+- Automated builds and publishing via GitHub Actions
 
 ## Usage
 
@@ -42,7 +42,7 @@ docker build -t docker-pgcli .
 
 ## Continuous Integration
 
-Docker images are automatically built and published for platforms (`linux/amd64`) using [GitHub Actions](.github/workflows/build_and_push.yml) on every push to `main`.
+Docker images are automatically built and published for the `linux/amd64` platform using [GitHub Actions](.github/workflows/build_and_push.yml) on every push to `main`.
 
 ## License
 
